@@ -1,0 +1,35 @@
+{
+    "name": "marcopollacci/mezzio-sentrydelegator",
+    "type": "library",
+    "description": "Utility to connect Mezzio to Sentry",
+    "keywords": ["mezzio", "laminas", "sentry", "php", "marcopollacci"],
+    "homepage": "https://www.marcopollacci.it",
+    "license": "MIT",
+    "authors": [
+        {"name": "Marco Pollacci", "email": "marco@pollacci.net"}
+    ],
+    "require": {
+        "php": "^7.3",
+        "sentry/sdk": "^2.0"
+    },
+    "require-dev": {
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": { "MarcoPollacci\\MezzioSentryDelegator\\": "src/" }
+    },
+    "autoload-dev": {
+    },
+    "extra": {
+        "zf": {
+            "component": "MarcoPollacci\\MezzioSentryDelegator",
+            "config-provider": "MarcoPollacci\\MezzioSentryDelegator\\ConfigProvider"
+        }
+    },
+     "repositories": [
+     ],
+     "archive": {
+        "exclude": ["!.git", "!/.git"]
+    }
+}
